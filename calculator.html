@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="cal.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="calculator">
+            <div class="wrapper">
+                <div class="calculator__result">
+                    <input type="text" class="calculator__result-secondary" id="resultSecondary" disabled>
+                    <input type="text" class="calculator__result-primary" id="resultPrimary" value="0" readonly>          
+                </div>
+                <table class="calculator_ozellik_tuslari">
+                    <tr>
+                        <td><button class="calculator__m-btn" disabled>MC</button></td>
+                        <td><button class="calculator__m-btn" disabled>MR</button></td>
+                        <td><button class="calculator__m-btn" disabled>M+</button></td>
+                        <td><button class="calculator__m-btn" disabled>M-</button></td>
+                    </tr>
+
+                    <tr class="calculator__buttons">
+                        <td><button class="calculator__btn" data-operator="percent">%</button></td>
+                        <td><button class="calculator__btn" data-option="clearEntry">CE</button></td>
+                        <td><button class="calculator__btn" data-option="clear">C</button></td>
+                        <td><button class="calculator__btn geri_tusu">&#9194;</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="calculator__btn" data-operator="fraction">&sup1;/ ₓ</button></td>
+                        <td><button class="calculator__btn" data-operator="pow">x&sup2;</button></td>
+                        <td><button class="calculator__btn" data-operator="sqrt">&radic;</button></td>
+                        <td><button class="calculator__btn" data-operator="divide">&divide;</button></td>
+                    </tr>
+
+                    <tr>
+                        <td><button class="calculator__btn calculator__btn--number" data-number>7</button></td>
+                        <td><button class="calculator__btn calculator__btn--number" data-number>8</button></td>
+                        <td><button class="calculator__btn calculator__btn--number" data-number>9</button></td>
+                        <td><button class="calculator__btn" data-operator="multiply">&times;</button></td>
+                    </tr>
+
+                    <tr>
+                        <td><button class="calculator__btn calculator__btn--number" data-number>4</button></td>
+                        <td><button class="calculator__btn calculator__btn--number" data-number>5</button></td>
+                        <td><button class="calculator__btn calculator__btn--number" data-number>6</button></td>
+                        <td><button class="calculator__btn" data-operator="minus">&minus;</button></td>
+                    </tr>
+
+                    <tr>
+                        <td><button class="calculator__btn calculator__btn--number" data-number>1</button></td>
+                        <td><button class="calculator__btn calculator__btn--number" data-number>2</button></td>
+                        <td><button class="calculator__btn calculator__btn--number" data-number>3</button></td>
+                        <td><button class="calculator__btn" data-operator="+">+</button></td>
+                    </tr>
+
+                    <tr>
+                        <td><button class="calculator__btn calculator__btn--number" data-option="+/-">+/-</button></td>
+                        <td><button class="calculator__btn calculator__btn--number" data-number>0</button></td>
+                        <td><button class="calculator__btn calculator__btn--number" data-option=",">,</button></td>
+                        <td><button class="calculator__btn calculator__btn--equals" data-operator="=">=</button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="cal.js"></script>
+</body>
+</html>

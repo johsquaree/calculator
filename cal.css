@@ -1,0 +1,105 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.calculator {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.calculator__result {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.calculator__result input {
+    font-size: 1.5em;
+    border: none;
+    outline: none;
+    background: none;
+    text-align: right;
+}
+
+.calculator__result-secondary {
+    color: #888;
+}
+
+.calculator__result-primary {
+    color: #333;
+}
+
+.calculator_ozellik_tuslari td {
+    padding: 5px;
+    text-align: center; /* Yeni eklenen satır */
+}
+
+.calculator__buttons,
+.calculator_ozellik_tuslari {
+    text-align: center;
+}
+
+.calculator__btn {
+    width: 60px;
+    height: 60px;
+    font-size: 1.2em;
+    margin: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
+.calculator__btn:hover {
+    background-color: #ddd;
+}
+
+.calculator__btn--number {
+    color: #333;
+}
+
+.calculator__btn--equals {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.calculator__btn--equals:hover {
+    background-color: #218838;
+}
+
+.calculator__btn--backspace:hover {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.calculator__m-btn {
+    width: 60px;
+    height: 40px;
+    font-size: 1em;
+    margin: 5px;
+    border: none;
+    outline: none;
+    cursor: not-allowed;
+    background-color: #ccc;
+    border-radius: 5px;
+}
+
+.calculator__m-btn:disabled {
+    cursor: not-allowed;
+}
+
+.calculator__m-btn:hover:disabled {
+    background-color: #ccc;
+}
